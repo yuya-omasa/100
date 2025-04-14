@@ -1,7 +1,7 @@
 import google.generativeai as genai
 import os
 
-genai.configure(api_key="AIzaSyDMy_D9WZiZgAIc1h1fisTuIQ3CByLZPbw")
+genai.configure(api_key="GEMINI_APIKEY")
 
 contents = (
     "9世紀に活躍した人物に関係するできごとについて述べた次のア～ウを年代の古い順に正しく並べよ。\n\n"
@@ -17,3 +17,6 @@ response = model.generate_content(
 )
 
 print(response.text)
+
+with open("out/40.out","w") as f:
+    f.write(response.text)
