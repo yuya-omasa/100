@@ -1,0 +1,7 @@
+EMBEDDING_DIM = 300
+VOCAB_SIZE = 50000  # 任意の語彙サイズに制限
+PAD_IDX = 0
+BATCH_SIZE = 32
+NUM_EPOCHS = 10
+LEARNING_RATE = 1e-3
+DEVICE = 'cuda'  # or 'cpu'
